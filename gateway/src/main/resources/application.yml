@@ -1,0 +1,26 @@
+server:
+  port:555
+Spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      default-zone: http://127.0.0.1:8761/eureka
+#映射不同路径到各个微服务中
+zuul:
+  routes:
+    menzhen:
+      path: /api/menzhen/**
+      serviceId: menzhen
+    doctor:
+      path: /api/doctor/**
+      serviceId:  doctor
+    drug:
+      path: /api/drug/**
+      serviceId:  drug
+    global:
+       path: /api/global/**
+       serviceId:  global
+
+

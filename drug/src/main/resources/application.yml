@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: drug
+eureka:
+  client:
+    service-url:
+      default-zone: http://127.0.0.1:8761/eureka
+#启动feign的熔断器功能
+feign:
+  hystrix:
+    enabled: true
