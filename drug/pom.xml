@@ -26,7 +26,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
+            <version>8.0.28</version>
         </dependency>
         <!--向外界请求服务，除了ribbor以外，还可以用已经封装了riboor以及hystrix（熔断器）的feign进行服务项目-->
         <dependency>
